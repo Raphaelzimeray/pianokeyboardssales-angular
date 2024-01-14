@@ -13,6 +13,10 @@ export class HomepageComponent implements OnInit {
     })
     .then(response=>{
       this.pianos = response;
+      console.log(this.pianos);
     })
+  }
+  getPianoLink(id:any) {
+    return "/pianos/"+id
   }
 }

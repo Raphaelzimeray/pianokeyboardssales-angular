@@ -1,6 +1,6 @@
 <div class="container">
-  <div  *ngFor ="let piano of pianos" class="card">
-    <img src="https://www.espaceclaviers.com/project/resources/img/original/rd-88screengal.jpg"alt="Piano">
+  <a  [routerLink]="getPianoLink(piano.id)" *ngFor ="let piano of pianos" class="card">
+    <img [src]= "piano.image_url" alt="Piano">
     <div class="brand-model-price">
       <div class="brand-and-model">
         <h4> {{ piano.brand }}</h4>
@@ -10,5 +10,5 @@
         <h4> {{ piano.price }} €</h4>
       </div>
     </div>
-  </div>
+  </a>
 </div>

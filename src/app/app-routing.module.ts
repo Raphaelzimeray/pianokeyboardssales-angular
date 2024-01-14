@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
+import { PianoDetailsComponent } from './piano-details/piano-details.component';
 
 const routes: Routes = [
   {
     path: '',
     component : HomepageComponent
+  },
+  {
+    path: 'pianos/:id',
+    component : PianoDetailsComponent
   }
 ];
 

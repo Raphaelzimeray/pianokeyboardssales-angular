@@ -1,14 +1,16 @@
 .card{
   border: 1px solid gainsboro;
   border-radius: 8px;
-  height: 350px;
+  /* height: 500px; */
   margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .card img{
   width: 100%;
   object-fit: cover;
-  height: 200px;
+  height: 350px;
   border-radius: 8px;
 }
 
