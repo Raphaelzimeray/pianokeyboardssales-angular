@@ -1,1 +1,15 @@
-<p>piano-details works!</p>
+<div class="container">
+  <h1 class="h1-your-piano"> Votre piano</h1>
+  <h2 class="h2-brand"> {{piano.brand}}</h2>
+  <div class="image-parent-piano">
+    <img class="image-piano-detail" [src]="piano.image_url" alt="Piano">
+    <ul class="piano-details-specification">
+      <li class="model"> {{piano.model}}</li>
+      <li class="number-of-sounds"> {{piano.numberofsounds}} sons </li>
+      <li class="color"> {{piano.color}}</li>
+      <li class="type">{{piano.kind}}</li>
+      <li *ngIf="piano.available; else elseBlock" class="availible"> Disponible</li>
+      <ng-template #elseBlock> <li class="unavailible"> Non disponible</li></ng-template>
+    </ul>
+  </div>
+</div>

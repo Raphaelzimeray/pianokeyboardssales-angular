@@ -1,0 +1,72 @@
+.h1-your-piano{
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.h2-brand{
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 50px;
+}
+
+
+.image-piano-detail{
+  width: 400px;
+  /* height: 400px; */
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: -13px 13px 30px 14px rgba(0,0,0,0.1);
+}
+
+.model{
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.number-of-sounds{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.color{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.availible{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.image-parent-piano{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.piano-details-specification{
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  margin: 0px;
+  padding: 50px;
+}
+
+.unavailible{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.type{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
