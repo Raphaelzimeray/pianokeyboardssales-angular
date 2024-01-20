@@ -1,3 +1,4 @@
+<h1 class="h1-homepage-piano"> Tous les pianos</h1>
 <div class="container">
   <a  [routerLink]="getPianoLink(piano.id)" *ngFor ="let piano of pianos" class="card">
     <img [src]= "piano.image_url" alt="Piano">

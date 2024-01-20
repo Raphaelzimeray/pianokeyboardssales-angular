@@ -31,9 +31,11 @@
   padding: 15px;
 }
 
-.h1-homepage-piano{
+.h1-acoustic-pianos{
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-family: 'Courier New', Courier, monospace;
 }
 
