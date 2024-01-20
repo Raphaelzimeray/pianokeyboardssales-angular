@@ -1,7 +1,16 @@
 <h1 class="h1-scene-keyboard"> Claviers de scène</h1>
 
 <div class="container">
-  <a class="card">
-
+  <a class="card" *ngFor ="let scenekeyboard of scenekeyboards">
+    <img [src]= "scenekeyboard.image_url" alt="Piano">
+    <div class="brand-model-price">
+      <div class="brand-and-model">
+        <h4> {{ scenekeyboard.brand }}</h4>
+        <h4> {{ scenekeyboard.model }}</h4>
+      </div>
+      <div class="price">
+        <h4> {{ scenekeyboard.price }} €</h4>
+      </div>
+    </div>
   </a>
 </div>

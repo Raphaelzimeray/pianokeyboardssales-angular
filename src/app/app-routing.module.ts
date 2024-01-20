@@ -5,6 +5,7 @@ import { PianoDetailsComponent } from './piano-details/piano-details.component';
 import { AcousticPianosComponent } from './acoustic-pianos/acoustic-pianos.component';
 import { SceneKeyboardsComponent } from './scene-keyboards/scene-keyboards.component';
 import { ElectricPianosComponent } from './electric-pianos/electric-pianos.component';
+import { PianoByTypeComponent } from './piano-by-type/piano-by-type.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'electric/pianos',
     component : ElectricPianosComponent
+  },
+  {
+    path: 'pianobytype/:type',
+    component : PianoByTypeComponent
   }
 ];
 
