@@ -1,6 +1,6 @@
-<!-- <h1 class="h1-homepage-piano"> Tous les pianos</h1>
+<h1 class="h1-homepage-piano"> {{pianoType}}</h1>
 <div class="container">
-  <a  [routerLink]="getPianoLink(piano.id)" *ngFor ="let piano of pianos" class="card">
+  <a  [routerLink]="getPianoLink(piano.id)" *ngFor ="let piano of pianobytype" class="card">
     <img [src]= "piano.image_url" alt="Piano">
     <div class="brand-model-price">
       <div class="brand-and-model">
@@ -12,5 +12,4 @@
       </div>
     </div>
   </a>
-</div> -->
-
+</div>

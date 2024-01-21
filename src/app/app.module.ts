@@ -6,9 +6,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PianoDetailsComponent } from './piano-details/piano-details.component';
-import { AcousticPianosComponent } from './acoustic-pianos/acoustic-pianos.component';
-import { SceneKeyboardsComponent } from './scene-keyboards/scene-keyboards.component';
-import { ElectricPianosComponent } from './electric-pianos/electric-pianos.component';
 import { PianoByTypeComponent } from './piano-by-type/piano-by-type.component';
 
 @NgModule({
@@ -17,9 +14,6 @@ import { PianoByTypeComponent } from './piano-by-type/piano-by-type.component';
     NavbarComponent,
     HomepageComponent,
     PianoDetailsComponent,
-    AcousticPianosComponent,
-    SceneKeyboardsComponent,
-    ElectricPianosComponent,
     PianoByTypeComponent
   ],
   imports: [
