@@ -16,9 +16,6 @@ export class HomepageComponent implements OnInit {
       console.log(this.pianos);
     })
   }
-  getPianoLink(id:any) {
-    return "/pianos/"+id
-  }
   // l'id est juste valable ce temps la alors que "pianos" on en a besoin
   // tout le temps pour afficher
 }

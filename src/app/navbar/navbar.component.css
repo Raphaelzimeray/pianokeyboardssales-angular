@@ -6,6 +6,7 @@
   font-family: 'Courier New', Courier, monospace;
   border-bottom: 1px solid gainsboro;
   font-size: 1rem;
+  height: 130px;
 }
 
 .a-acoustic-pianos{
@@ -21,4 +22,11 @@
 .a-electric-pianos{
   text-decoration: none;
   color: black;
+}
+
+.a-all-of-pianos{
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
 }

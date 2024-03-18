@@ -1,0 +1,27 @@
+.card{
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  /* height: 500px; */
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+
+.brand-model-price{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.price{
+  display: flex;
+  align-self: flex-end;
+}
+
+.card img{
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+  border-radius: 8px;
+}

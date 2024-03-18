@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PianoDetailsComponent } from './piano-details/piano-details.component';
 import { PianoByTypeComponent } from './piano-by-type/piano-by-type.component';
+import { PianoCardComponent } from './piano-card/piano-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PianoByTypeComponent } from './piano-by-type/piano-by-type.component';
     NavbarComponent,
     HomepageComponent,
     PianoDetailsComponent,
-    PianoByTypeComponent
+    PianoByTypeComponent,
+    PianoCardComponent
   ],
   imports: [
     BrowserModule,
