@@ -1,4 +1,4 @@
-<a  [routerLink]="getPianoLink(piano.id)" class="card">
+<div (click)="onPianoClick()" class="card">
   <img [src]= "piano.image_url" alt="Piano">
   <div class="brand-model-price">
     <div class="brand-and-model">
@@ -9,4 +9,4 @@
       <h4> {{ piano.price }} €</h4>
     </div>
   </div>
-</a>
+</div>

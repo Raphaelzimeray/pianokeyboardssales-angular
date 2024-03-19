@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-piano-card',
@@ -7,7 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class PianoCardComponent {
   @Input() piano:any;
+  @Output() onClick = new EventEmitter<string>();
   getPianoLink(id:any) {
     return "/pianos/"+id
+  }
+  onPianoClick(){
+    this.onClick.emit();
   }
 }
