@@ -1,25 +1,60 @@
-<h1 class="h1-homepage-piano"> Tous les pianos</h1>
+<h1 class="h1-homepage-piano">Tous les pianos</h1>
 <div class="container">
   <div class="background-modal-of-piano-card-in-homepage" *ngIf="openedPiano">
     <div class="modal-of-piano-card-in-homepage">
       <div class="close-modal-of-piano-card-in-homepage" (click)="closeCard()">
-        <img class="img-of-close-modal-of-piano-card-in-homepage" src="../../assets/download-icon-CLOSE-131994911256789607_0.svg" alt="close">
+        <img
+          class="img-of-close-modal-of-piano-card-in-homepage"
+          src="../../assets/download-icon-CLOSE-131994911256789607_0.svg"
+          alt="close"
+        />
       </div>
       <div class="container-of-piano-details">
-        <h2 class="h2-brand"> {{openedPiano.brand}}</h2>
+        <h2 class="h2-brand">{{ openedPiano.brand }}</h2>
         <div class="image-parent-piano">
-          <img class="image-piano-detail" [src]="openedPiano.image_url" alt="Piano">
+          <img
+            class="image-piano-detail"
+            [src]="openedPiano.image_url"
+            alt="Piano"
+          />
           <ul class="piano-details-specification">
-            <li class="model"> {{openedPiano.model}}</li>
-            <li class="number-of-sounds"> {{openedPiano.numberofsounds}} sons </li>
-            <li class="color"> {{openedPiano.color}}</li>
-            <li class="type">{{openedPiano.kind}}</li>
-            <li *ngIf="openedPiano.available; else elseBlock" class="availible"> Disponible</li>
-            <ng-template #elseBlock> <li class="unavailible"> Non disponible</li></ng-template>
+            <li class="model">{{ openedPiano.model }}</li>
+            <li class="number-of-sounds">
+              {{ openedPiano.numberofsounds }} sons
+            </li>
+            <li class="color">{{ openedPiano.color }}</li>
+            <li class="type">{{ openedPiano.kind }}</li>
+            <li *ngIf="openedPiano.available; else elseBlock" class="availible">
+              Disponible
+            </li>
+            <ng-template #elseBlock>
+              <li class="unavailible">Non disponible</li></ng-template
+            >
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <app-piano-card *ngFor ="let piano of pianos" [piano]="piano" (onClick)="openCard(piano)"></app-piano-card>
+  <app-piano-card
+    *ngFor="let piano of paginatedPianos"
+    [piano]="piano"
+    (onClick)="openCard(piano)"
+  ></app-piano-card>
+</div>
+<div class="pagination-parent">
+  <img
+    *ngIf="currentPage > 0"
+    (click)="decrementPagination()"
+    class="button-pagination-previous"
+    src="/assets/left.svg"
+    alt="Left arrow"
+  />
+
+  <img
+    *ngIf="currentPage + 1 <= numberOfPages"
+    (click)="incrementPagination()"
+    class="button-pagination-next"
+    src="/assets/right.svg"
+    alt="Right arrow"
+  />
 </div>

@@ -129,11 +129,40 @@
 
 .close-modal-of-piano-card-in-homepage{
   position: fixed;
-  top: 200px;
-  right: 300px
+  top: 210px;
+  right: 370px
 }
 
 .img-of-close-modal-of-piano-card-in-homepage{
   height: 25px;
   width: 25px;
+}
+
+.pagination-parent{
+  display: flex;
+  justify-content: center;
+}
+
+.button-pagination-previous{
+  margin-right: 15px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button-pagination-previous:active{
+  transform: scale(0.8);
+}
+
+.button-pagination-next{
+  margin-left: 15px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button-pagination-next:active{
+  transform: scale(0.8);
 }
